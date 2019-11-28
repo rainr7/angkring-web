@@ -12,7 +12,7 @@ html, body {
 
 .navbar-light{
   transition:500ms ease;
-  background: red;
+  
 }
 .navbar-expand-lg.scrolled{
   background:#000;
