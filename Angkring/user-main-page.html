@@ -25,22 +25,22 @@
 
         <div class="collapse navbar-collapse" style="align-items:center ;" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item ml-auto">
                     <a class="nav-link" href="#">Appetizer</a> 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ml-auto">
                     <a class="nav-link" href="#">Main Course</a> 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ml-auto">
                     <a class="nav-link" href="#">Dessert</a> 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ml-auto">
                     <a class="nav-link" href="#">Beverage</a> 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ml-auto">
                     <a class="nav-link" href="#">   </a> 
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ml-auto">
                   <a class="btn btn-outline-success my-2 my-sm-0 active" href="index cp.html" role="button">Home</a>
                 </li>
             </ul>
@@ -49,9 +49,66 @@
         
     <div class="row">
             <div class="col">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="card mt-3 ml-3 sticky-top yesus " style="background: rgba(156, 238, 101,0.2);">
+                    <article class="card-group-item" >
+                      <header class="card-header">
+                        <h6 class="title">Range input </h6>
+                      </header>
+                      <div class="filter-content">
+                        <div class="card-body">
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label>Min</label>
+                          <input type="number" class="form-control" id="inputEmail4" placeholder="Rp 0">
+                        </div>
+                        <div class="form-group col-md-6 text-right">
+                          <label>Max</label>
+                          <input type="number" class="form-control" placeholder="Rp 100.000">
+                        </div>
+                        </div>
+                        </div> <!-- card-body.// -->
+                      </div>
+                    </article> <!-- card-group-item.// -->
+                    <article class="card-group-item">
+                      <header class="card-header">
+                        <h6 class="title">Selection </h6>
+                      </header>
+                      <div class="filter-content">
+                        <div class="card-body">
+                          <div class="custom-control custom-checkbox">
+                            <span class="float-right badge badge-light round">12</span>
+                              <input type="checkbox" class="custom-control-input" id="Check1">
+                              <label class="custom-control-label" for="Check1">Appetizer</label>
+                          </div> <!-- form-check.// -->
+                  
+                          <div class="custom-control custom-checkbox">
+                            <span class="float-right badge badge-light round">10</span>
+                              <input type="checkbox" class="custom-control-input" id="Check2">
+                             <label class="custom-control-label" for="Check2">Main Course</label>
+                          </div> <!-- form-check.// -->
+                  
+                          <div class="custom-control custom-checkbox">
+                            <span class="float-right badge badge-light round">17</span>
+                              <input type="checkbox" class="custom-control-input" id="Check3">
+                              <label class="custom-control-label" for="Check3">Dessert</label>
+                          </div> <!-- form-check.// -->
+                  
+                          <div class="custom-control custom-checkbox">
+                            <span class="float-right badge badge-light round">12</span>
+                              <input type="checkbox" class="custom-control-input" id="Check4">
+                              <label class="custom-control-label" for="Check4">Beverage</label>
+                          </div>
+                          <div class="custom-control custom-checkbox">
+                            <span class="float-right badge badge-light round">9</span>
+                              <input type="checkbox" class="custom-control-input" id="Check5">
+                              <label class="custom-control-label" for="Check5">Snacks</label>
+                          </div> <!-- form-check.// -->
+                        </div> <!-- card-body.// -->
+                      </div>
+                    </article> <!-- card-group-item.// -->
+                  </div> <!-- card.// -->
                 </div> 
-        <div class="col-10">
+        <div class="col-9">
             <!-- category -->
             <h3> <i class="fas fa-utensils mt-2"></i> Browse by Categories</h3>
             
@@ -132,14 +189,14 @@
                     </div>
                     <div class="row">
                     <div class="col-lg-6 col-sm-12 ">
-                    <div class="bd-example mr-3">
+                    <div class="bd-example mr-3" >
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                         </ol>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner" >
                             <div class="carousel-item active">
                             <img src="Image/salad.jpg" class="d-block w-100 rounded" alt="...">
                             <div class="carousel-caption d-none d-md-block">
@@ -173,38 +230,15 @@
                         </div>
                     </div>
                     </div>
-                      <div class=" col-6 d-none d-md-block jumbotron yes ">
+                      <div class=" col-6 d-none d-md-block jumbotron yes " style="height: 17rem;">
                         <div class="container fluid">
                           <h2 class="">Angkring's finest selection</h2>
-                          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent. This is a modified jumbotron that occupies the entire horizontal space of its parent. This is a modified jumbotron that occupies the </p>
+                          <p class="">This is a modified jumbotron that occupies the entire horizontal space of its parent. This is a modified jumbotron that occupies the entire horizontal space of its parent. This is a modified jumbotron that occupies the </p>
                         </div>
                     </div>
                 </div>
               </div>
             </div>
-
-            <section class="ftco-section ftco-wrap-about">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-7 d-flex">
-                    <div class="img img-1 mr-md-2" style="background-image: url(images/salad.jpg);"></div>
-                    <div class="img img-2 ml-md-2" style="background-image: url(images/about-1.jpg);"></div>
-                  </div>
-                  <div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
-                    <div class="heading-section mb-4 my-5 my-md-0">
-                      <span class="subheading">About</span>
-                      <h2 class="mb-4">Feliciano Restaurant</h2>
-                    </div>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                    <pc class="time">
-                      <span>Mon - Fri <strong>8 AM - 11 PM</strong></span>
-                      <span><a href="#">+ 1-978-123-4567</a></span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
             </div>
             <!-- special end -->
 
@@ -224,7 +258,7 @@
                                                 <div class="container">
                                                     <div class="row mr-auto">
                                                         <div class="col-sm-6 col-lg-3 mt-2">
-                                                            <div class="card" style="width: 14rem;">
+                                                            <div class="card card-cat" style="width: 14rem;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">Steak</h5>
@@ -235,7 +269,7 @@
                                                             </div>
                                                           </div>
                                                           <div class="col-sm-6 col-lg-3 mt-2">
-                                                            <div class="card" style="width: 14rem;">
+                                                            <div class="card card-cat" style="width: 14rem;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                               <div class="card-body">
                                                                 <h5 class="card-title">Steak</h5>
@@ -246,7 +280,7 @@
                                                             </div>
                                                           </div>
                                                           <div class="col-sm-6 col-lg-3 mt-2">
-                                                            <div class="card" style="width: 14rem;">
+                                                            <div class="card card-cat" style="width: 14rem;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">Steak</h5>
@@ -257,7 +291,7 @@
                                                             </div>
                                                           </div>
                                                           <div class="col-sm-6 col-lg-3 mt-2">
-                                                            <div class="card" style="width: 14rem;">
+                                                            <div class="card card-cat" style="width: 14rem;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">Steak</h5>
@@ -283,7 +317,7 @@
                                                       <div class="container">
                                                         <div class="row">
                                                           <div class="col-sm-6 col-lg-3">
-                                                            <div class="card" style="width: 14rem;margin: auto;">
+                                                            <div class="card card-cat" style="width: 14rem;margin: auto;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">Steak</h5>
@@ -295,7 +329,7 @@
                                                           </div>
                                                           
                                                           <div class="col-sm-6 col-lg-3 mt-2">
-                                                            <div class="card" style="width: 14rem;">
+                                                            <div class="card card-cat" style="width: 14rem;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">Steak</h5>
@@ -306,7 +340,7 @@
                                                             </div>
                                                           </div>
                                                           <div class="col-sm-6 col-lg-3 mt-2">
-                                                            <div class="card" style="width: 14rem;">
+                                                            <div class="card card-cat" style="width: 14rem;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                               <div class="card-body">
                                                                 <h5 class="card-title">Steak</h5>
@@ -317,7 +351,7 @@
                                                             </div>
                                                           </div>
                                                           <div class="col-sm-6 col-lg-3 mt-2">
-                                                            <div class="card" style="width: 14rem;">
+                                                            <div class="card card-cat" style="width: 14rem;">
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body">
                                                                   <h5 class="card-title">Steak</h5>
@@ -345,6 +379,82 @@
                                                 </div>
                                                 
                                               </div>
+                                
+                                              <!-- <div class="modal fade " id="produk1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                      </div>
+                                                      <div class="modal-body">
+                                                        <div class="row">
+                                                          <div class="col">
+                                                            <img src="Image/kopi.jpg" alt="yo" style="height: 300pt; width: 300pt;">
+                                                          </div>
+                                                          <div class="col" style="vertical-align: middle;">
+                                                            <div class="row-6"><br><br<br><br><br><br><br><br> </div>
+                                                            <div class="row">
+                                                                <a href="user-main-page.html" class="btn btn-primary btn-block" role="button" style="margin-bottom: 5%; margin-right: 5%;" aria-pressed="true">Login as User</a>
+                                                                <a href="admin-main-page.html" class="btn btn-danger btn-block " role="button" style="margin-right: 5%;" aria-pressed="true">Login as Admin</a>
+                                                            </div>   
+                                                            <div class="row-6"><br></div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>  -->
+
+                                                <div class="modal fade" id="produk1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg" role="document">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">Product Detail</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body" style="position: relative;">
+                                                          <div class="row">
+                                                              <img class="rounded mx-auto " src="Image/steak.jpg" style="display: block;  height: 18rem; width: auto;">
+                                                            <div class="col-9">
+                                                              
+                                                            </div>
+                                                          </div>
+                                                          <div class=row>
+                                                            <div class="col md-6">
+                                                              <table class="  table table-borderless">
+                                                              <tr>  
+                                                                <th> Menu Name </th>
+                                                              <td> Steak </td>  
+                                                              <!-- <div class="container-fluid"> -->
+                                                              </tr>
+                                                              <tr>  
+                                                                <th> Price </th>
+                                                              <td> Rp 50.000 </td>
+                                                              </tr>
+                                                              <tr>  
+                                                                <th> Description</th>
+                                                              <td> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
+                                                              </tr>
+                                                              </table>
+                                                            </div>
+                                                            
+                                                          </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                                          <button type="button" class="btn btn-primary"><i class="fas fa-utensils"></i>  Buy</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                
                                               
                                 </div>
                         </div>
