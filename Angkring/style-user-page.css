@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:400,700");
+html, body {
+  font-family: 'Hind', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y:visible;
+}
+
+.navbar-light{
+  transition:500ms ease;
+  background: red;
+}
+.navbar-expand-lg.scrolled{
+  background:#000;
+}
+
+.hori-scroll > .row { 
+  overflow-x: auto; 
+  white-space: nowrap; 
+} 
+
+.hori-scroll > .row > .col-3 { 
+  display: inline-block; 
+  float: none; 
+} 
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: rgba(192, 192, 192, 0.3);    
+}
+
+.mx-6{
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.card-cat{
+  border: black;
+}
+
+
+.card-cat .img{
+  background-color: black;
+}
+
+.card-cat:hover,
+.card-cat.hover {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  
+	transform:scale(1.02);
+}
+
+
+.overlay-warna{
+  height:100%;
+   width: 15rem;
+   position:absolute;
+   background-color:#000;
+   opacity:.3;
+   
+}
+
+
+.text-white{
+  color: rgba(255, 255,255,0.1);
+}
+
+.yes{
+  background-color: rgba(255,255,255,0.4);
+  padding-bottom: -10rem;
+}
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100%;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+
+.carousel-control-next:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */

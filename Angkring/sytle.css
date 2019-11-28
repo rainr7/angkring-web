@@ -1,0 +1,143 @@
+body, html, .bg {
+    height: 100vh;
+    width: 100wh;
+    margin: 0;
+    overflow: hidden;
+    
+
+}
+
+.boody{
+    background-image: url(image/salad.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+}
+ 
+.navbar{
+    z-index: 99;
+}
+
+
+.nav-item button{
+    /* margin-left: 10%; */
+}
+
+
+
+.bg {
+    /* The image used */
+    /* background-image: url("salad.jpg"); */
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bd-example{
+    position:absolute;
+    top: 0;
+    left: 0;
+    /* margin-top: -187px; */
+}
+
+/* .carousel-item h5{
+    margin-top: -120px
+}
+
+.carousel-item p{
+    margin-bottom: -120px
+} */
+
+.carousel-item img{
+    
+    height: auto;
+    max-width: 100%;
+    border: 0px;
+    object-fit: cover;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+   -webkit-transform-origin: center;
+    transform-origin: center;
+
+
+}
+
+.carousel .slide{
+    margin-bottom: 1000px
+}
+
+.carousel-caption{
+    background-color:rgb(255, 255, 255,0.7);
+    height: auto;
+    width: auto;
+    position: absolute;
+    bottom:100;
+    margin-bottom: 15%;
+    border-radius: 25px;
+}
+
+.carousel-caption h5{
+    color: rgb(66,66,66);
+}
+
+.carousel-caption p{
+    color: rgb(66,66,66);
+}
+
+.carousel-indicators{
+    padding-left: 20px;
+}
+
+.carousel-indicators li {
+    height: 30px;
+    width: 70px;
+    background-color: rgb(255,255,255,1 );
+    border-radius: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: black;
+    /* width: auto;
+    height: auto; */
+    text-indent: unset;
+    margin-bottom: 10%;
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 255,0.2);
+}   
+
+.modal-title{
+    /* margin-left: 210px; */
+    justify-content: center;
+    font-size: 20pt;
+    
+
+}
+
+.modal-header {
+    padding:9px 15px;
+    /* border-bottom:1px solid #eee; */
+    background-color: rgb(255, 255, 255,0.8);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+ }
+
+ .modal-body {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: rgb(255, 255, 255,0.8);
+  
+     border-top-left-radius: 1px;
+     border-top-right-radius: 1px;
+ }
+
+ /* card carousel user */
+
+
+
