@@ -9,13 +9,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <title>Angkring</title>
 </head>
 <body >
    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light justify-content-center" style="background-color: rgb(255,255,255,0.7); ">
       <div class="container-fluid">    
-        <a class="navbar-brand" href="#"><img src="image/angkring logo.png" class="d-inline-block " alt="logo" style="width: 60px;">  Angkring</a>
+        <a class="navbar-brand" href="#"><img src="image/angkring logo.png" class="d-inline-block " alt="logo" style="width: 60px;">  </a>
+        <h3 class="ml-auto bounce fadeInDown animated delay-1s" style="font-family: 'lobster', cursive;">Angkring</h3>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -103,7 +106,7 @@
               <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                    <h5 class="modal-title ml-auto" id="exampleModalCenterTitle">Login</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -111,15 +114,42 @@
                   <div class="modal-body">
                     <div class="row">
                       <div class="col">
-                        <img src="Image/kopi.jpg" alt="yo" style="height: 300pt; width: 300pt;">
+                        <img class="rounded mb-1" src="Image/kopi.jpg" alt="yo" style="height: 300pt; width: 300pt;">
                       </div>
-                      <div class="col" style="vertical-align: middle;">
-                        <div class="row-6"><br><br<br><br><br><br><br><br> </div>
-                        <div class="row">
-                            <a href="user-main-page.html" class="btn btn-primary btn-block" role="button" style="margin-bottom: 5%; margin-right: 5%;" aria-pressed="true">Login as User</a>
-                            <a href="admin-main-page.html" class="btn btn-danger btn-block " role="button" style="margin-right: 5%;" aria-pressed="true">Login as Admin</a>
+                      <div class="col mt-5" style="vertical-align: middle;">
+                        <div class="row" >
+                           
+                            <form>
+                                <div class="input-group form-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="username">
+                                  
+                                </div>
+                                <div class="input-group form-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                  </div>
+                                  <input type="password" class="form-control" placeholder="password">
+                                </div>
+                                <div class="row align-items-center remember mb-2">
+                                  <input type="checkbox">Remember Me
+                                </div>
+                                <!-- <div class="form-group">
+                                  <input type="submit" value="Login" class="btn float-right login_btn">
+                                </div> -->
+                              </form>
+                              
+                            </div>
+                            <div class="row-6 mt-5">
+                                <a href="user-main-page.html" class=" btn btn-success  login_btn2" role="button" style=" margin-right: 5%;" aria-pressed="true">Login as User</a>
+                                <a href="admin-main-page.html" class="btn btn-danger login_btn2" role="button" style="margin-right: 5%;" aria-pressed="true">Login as Admin</a>
+                            </div>
+                             
+                           </div>
                         </div>   
-                        <div class="row-6"><br></div>
+                        
                       </div>
                     </div>
                   </div>

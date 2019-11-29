@@ -1,37 +1,58 @@
 >based on figma
->card carousel
-	>one line caption
-	>see all redirect to new page
-	>popup when clicked
->colored navbar
->sidebar filter(dont have to functioning properly)
->Map button on right side(idk how to make this)
->floating 'order list' button on right bottom side
+
+>sidebar filter(dont have to functioning properly) (NEEDS dropdown & POLISHING)
+>Map button on right side(idk how to make this) (HOW)
+>floating 'order list' button on right bottom side (DONE, ON TOP)
 
 >Landing
 	>modal
-		>make buttons centered
-		>make button longer
+		>make buttons centered (DONE)
+		>make button longer (DONE)
 		>change image
 >user page
 	change icons to a different one
 	>Whats popular today
-		>get fatan's grid
-		>get 8 different food(all categories)
-			>A salad, M Steak, D cookies, B icedtea  4more
+		>get fatan's grid (DONE)
+		>get 8 different food(all categories) (DONE)
+			>A salad, M Steak, D cookies, B icedtea  4more (CANCEL)
 		>two buttons(on the image(like figma)/below(with caption))
-	>browse by categories
+	
+	
+	>Healthy suggestion
+		>popular, only 4 (all vegan fud)		(CANCEL)
+
+	>filter
+		>dropdown
+
+		change all carousel button to fatan's tele (DONE)
+		make navbar sticky (DONE)
+
+
+--------------------------DONE-----------------------------
+
+
+>card carousel 
+	>one line caption
+	>see all redirect to new page
+	>popup when clicked
+>colored navbar
+
+>browse by categories
 		>change card to based on figma
 		>get image to card
 		>image
 		>title + caption(one line)
 		>overlay
-	
-	>Healthy suggestion
-		>popular, only 4 (all vegan fud)
 
-	>filter
-		>dropdown
 
-		change all carousel button to fatan's tele
-		make navbar sticky
+
+
+
+
+
+
+
+
+
+
+

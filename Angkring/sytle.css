@@ -19,9 +19,7 @@ body, html, .bg {
 }
 
 
-.nav-item button{
-    /* margin-left: 10%; */
-}
+
 
 
 
@@ -105,8 +103,7 @@ body, html, .bg {
 }
 
 .modal-content {
-    background-color: red;
-    rgb(255, 255, 255,0.2);
+    background-color: transparent;
 }   
 
 .modal-title{
@@ -130,13 +127,56 @@ body, html, .bg {
  }
 
  .modal-body {
-    padding:9px 15px;
+    padding:9px 4px;
     border-bottom:1px solid #eee;
     background-color: rgb(255, 255, 255,0.8);
-  
-     border-top-left-radius: 1px;
-     border-top-right-radius: 1px;
+
+     border-bottom-left-radius: 1px;
+     border-bottom-right-radius: 1px;
+     -webkit-border-bottom-left-radius: 5px;
+     -webkit-border-bottom-right-radius: 5px;
+     -moz-border-radius-bottomleft: 5px;
+     -moz-border-radius-bottomright: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+
  }
+
+ .input-group-prepend span{
+    width: 2.5rem;
+    background-color: #2dbe55;
+    color: black;
+    border:0 !important;
+    }
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+    color: black;
+    }
+    
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    color: black;
+    background-color: rgb(154, 255, 159);
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
 
  /* card carousel user */
 
