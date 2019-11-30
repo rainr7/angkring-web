@@ -26,8 +26,7 @@ html, body {
   z-index: 1234902; /* Stay on top */
   top: 10%; /* Stay at the top */
   right: 0;
-  background-color: rgb(177, 240, 158);
-   /* rgba(255,255,255,0.98);  */
+  background-color:   rgba(230, 230, 230, 0.9); 
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 1rem; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -305,15 +304,15 @@ html, body {
   display: block;        
   line-height: 20px;
   text-align: left;
-  font-size: 20pt;
+  font-size: 15pt;
   font-weight: bold;
   text-decoration: none;
   transition: ease all 0.3s;
   position: fixed;
   left: 1%;
-  bottom:12%;
+  bottom:2%;
 }
-.fabtn:hover{background: #26a74a}
+/* .fabtn:hover{background: #26a74a} */
 
 .green-bg{
  background-image: url('Image/footer green.jpg');

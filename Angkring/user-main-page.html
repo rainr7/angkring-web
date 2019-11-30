@@ -56,42 +56,42 @@
                   <h2 class="ml-2 text-muted"> <i class="fas fa-shopping-cart"></i> Your Cart</h2>
               </div>
                 <div class="row">
-                    <div class="card ml-2 mb-3" style="width: 24rem; height: 7.17rem; ">
+                    <div class="card ml-2 mb-3 cartcard" style="width: 24rem; height: 7.17rem; ">
                         <div class="row no-gutters">
                           <div class="col-md-4">
                             <img src="image/steak.jpg" class="rounded card-img cart-img" alt="...">
                           </div>
                           <div class="col-md-8 pull-left">
                             <div class="card-body">
-                              <button type="button" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
+                              <button type="button" onclick="animateCSS('.cartcard', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
                               <h4 class="card-title txtB text-wrap" style="margin-left: -1.50rem;"><b> Beef Steak</b></h4>
                               <p class="card-text text-muted" style="margin-left: -1.50rem;">Rp 50.000</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    <div class="card ml-2 mb-3" style="width: 24rem; height: 7.17rem; ">
+                    <div class="card ml-2 mb-3 cartcard2" style="width: 24rem; height: 7.17rem; ">
                         <div class="row no-gutters">
                           <div class="col-md-4">
                             <img src="image/steak.jpg" class="rounded card-img cart-img" alt="...">
                           </div>
                           <div class="col-md-8 pull-left">
                             <div class="card-body">
-                              <button type="button" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
+                              <button type="button" onclick="animateCSS('.cartcard2', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
                               <h4 class="card-title txtB text-wrap" style="margin-left: -1.50rem;"><b> Beef Steak</b></h4>
                               <p class="card-text text-muted" style="margin-left: -1.50rem;">Rp 50.000</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    <div class="card ml-2 mb-3" style="width: 24rem; height: 7.17rem; ">
+                    <div class="card ml-2 mb-3 cartcard3" style="width: 24rem; height: 7.17rem; ">
                         <div class="row no-gutters">
                           <div class="col-md-4">
                             <img src="image/steak.jpg" class="rounded card-img cart-img" alt="...">
                           </div>
                           <div class="col-md-8 pull-left">
                             <div class="card-body">
-                              <button type="button" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
+                              <button type="button" onclick="animateCSS('.cartcard3', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
                               <h4 class="card-title txtB text-wrap" style="margin-left: -1.50rem;"><b> Beef Steak</b></h4>
                               <p class="card-text text-muted" style="margin-left: -1.50rem;">Rp 50.000</p>
                             </div>
@@ -105,9 +105,16 @@
             
         
     <div class="row">
-            <div class="col">
+            <div class="col-3">
                 <div class="card mt-3 ml-3 sticky-top filter-oke fadeInLeft animated delay-1s" style="background: rgba(156, 238, 101,0.2);">
-                    <article class="card-group-item" >
+                    <header class="card-header">
+                        <!-- <h6 class="title text-center font-weight-bold">Filter</h6> -->
+                        <a class="btn btn-link text-weight-bold text-center text-decoration-none" style=" font-size: 15pt;" data-toggle="collapse" href="#filtercollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Filter
+                        </a>
+                      </header>   
+                  <div class="collapse" id="filtercollapse">
+                    <article class="card-group-item" >      
                       <header class="card-header">
                         <h6 class="title">Range input </h6>
                       </header>
@@ -161,11 +168,16 @@
                               <label class="custom-control-label" for="Check5">Snacks</label>
                           </div> <!-- form-check.// -->
                         </div> <!-- card-body.// -->
+                        <header class="card-header">
+                            <a class="btn btn-success ml-auto" href="#" role="button">Set Filter</a>
+                          </header>
                       </div>
                     </article> <!-- card-group-item.// -->
-                    <a class="btn btn-success" href="#" role="button">Set Filter</a>
-                  </div> <!-- card.// -->
-                </div> 
+                  </div>
+                    </div>
+                    
+                  </div>
+ 
         <div class="col-9">
             <!-- category -->
  
@@ -515,8 +527,8 @@
                                           </div>
                                         </div>
                                         <div class="modal-footer">
-                                          <button type="button" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-                                          <button type="button" class="btn btn-primary"><i class="fas fa-utensils"></i>  Buy</button>
+                                          <button type="button" class="btn btn-primary" onclick="animateCSS('.carticon', 'rubberBand')"><i class="fas fa-shopping-cart carticon"></i> Add to Cart</button>
+                                          <a href="checkout.html" class="btn btn-primary" role="button" aria-pressed="false"><i class="fas fa-utensils buyicon"></i>  Buy</a>
                                         </div>
                                       </div>
                                     </div>
@@ -578,7 +590,7 @@
 
 <!-- modal end -->
             <a href="user-main-page.html" class="btn mt-3 mb-1 fabtn2 fadeOutUp animated" > Welcome! </a>                      
-            <a href="user-main-page.html" class="btn btn-outline-success mt-3 mb-1 fabtn fadeInLeft animated" ><i class="fas fa-chevron-left"></i> Back</a>
+            <a href="user-main-page.html" class="btn btn-outline-danger mt-3 mb-1 fabtn fadeInLeft animated" ><i class="fas fa-chevron-left"></i> Back</a>
            <!-- popular carousel end -->
            <footer id="sticky-footer" class="mt-3 py-4 bg-light green-bg text-black-50">
               <div class="container text-center">

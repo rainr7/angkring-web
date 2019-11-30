@@ -3,6 +3,54 @@
     background-image: url('Image/bg-food.png');
 }
 
+.sidenav {
+  height: 75%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1234902; /* Stay on top */
+  top: 10%; /* Stay at the top */
+  right: 0;
+  background-color:   rgba(230, 230, 230, 0.9); 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1rem; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav img{
+  object-fit: cover;
+  height: 7.17rem;
+  width: 7rem;
+}
+
+/* The navigation menu links */
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+} */
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .checkbtn {
+  position: absolute;
+  top: 100%;
+  right: 25px;
+}
 
 
 .talkbubble {
@@ -138,12 +186,12 @@
     display: block;        
     line-height: 20px;
     text-align: left;
-    font-size: 20pt;
+    font-size: 15pt;
     font-weight: bold;
     text-decoration: none;
     transition: ease all 0.3s;
     position: fixed;
     left: 1%;
-    bottom:12%;
+    bottom:2%;
   }
-.fabtn:hover{background: #26a74a}
+/* .fabtn:hover{background: #26a74a} */

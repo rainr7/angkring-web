@@ -1,7 +1,7 @@
 >based on figma
 
 >sidebar filter(dont have to functioning properly) (NEEDS dropdown & POLISHING)
->Map button on right side(idk how to make this) (HOW)
+>Map button on right side(idk how to make this) (Changed, map on checkout)
 >floating 'order list' button on right bottom side (DONE, ON TOP)
 
 >Landing
@@ -22,10 +22,19 @@
 		>popular, only 4 (all vegan fud)		(CANCEL)
 
 	>filter
-		>dropdown
+		>dropdown (DONE)
 
 		change all carousel button to fatan's tele (DONE)
 		make navbar sticky (DONE)
+
+>404 page
+
+>Checkout page
+	>based on figma
+		>small image, simple caption, price, delete button, quantti(opt)
+		>checkoutbutton
+
+
 
 
 --------------------------DONE-----------------------------

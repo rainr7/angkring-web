@@ -212,6 +212,24 @@ html, body {
   animation-delay: 0.3s;
   z-index: 9999999;
 }
+.fabtn{
+
+
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: block;        
+  line-height: 20px;
+  text-align: left;
+  font-size: 15pt;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  left: 1%;
+  bottom:2%;
+}
 
 
 .green-bg{
