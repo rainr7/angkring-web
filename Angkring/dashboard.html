@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-dashboard.css">
+    <!-- <link rel="stylesheet" href="style-allmenu.css"> -->
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <script src="../../../dist/2.9.3/Chart.min.js"></script>
+	<script src="../utils.js"></script>
+    <title>Angkring</title>
+</head>
+<body class="body">
+
+        <!-- <script src="https://www.chartjs.org/dist/2.9.3/chart.min.js"></script>
+
+        <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+
+        <div class="sidenav">
+            <div style="margin-top: 50%;">
+                <a href="#income">Incomes</a>
+                <a href="#order">Orders</a>
+                <a href="#ingredients">Ingredients</a>
+            </div>
+        </div>
+              
+            <div class="main">
+                <h2 style="margin-top: 3%;">Auto Sidebar</h2>
+            </div>  
+            <div>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                    <canvas id="myChart"></canvas>
+                    <script>
+                    var ctx = document.getElementById('myChart').getContext('2d');
+                    var chart = new Chart(ctx, {
+                      // The type of chart we want to create
+                      type: 'bar',
+                    
+                      // The data for our dataset
+                      data: {
+                        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                        datasets: [{
+                          label: 'My First dataset',
+                          backgroundColor: 'rgb(255, 99, 132)',
+                          borderColor: 'rgb(255, 99, 132)',
+                          data: [0, 10, 5, 2, 20, 30, 45]
+                        }]
+                      },
+                    
+                      // Configuration options go here
+                      options: {}
+                    });
+                    </script>
+            </div> -->
+    
+        <div class="sidenav fadeInLeft animated">
+                    <div style="height: 32%;">
+                      <img src="resources/logo.svg" style="width: 100%; position: relative; height: 100%;">
+                    </div>
+                    <div class="mt-4">
+                        <a class="card border-0 rounded-0 shadow mt-2" href="#income" style="color:black;">Dashboard</a>
+                        <a class="card border-0 rounded-0 shadow mt-2" href="order.html">Orders</a>
+                        <a class="card border-0 rounded-0 shadow mt-2" href="ingredient.html">Ingredients</a>
+                        <a class="card border-0 rounded-0 shadow mt-2" href="admin-main-page.html">Home</a>
+                    </div>
+        </div>
+
+         <div class="container main justify-content-center" style="margin-right: 25%; width: 65rem;">
+                <div>
+                <div class="row justify-content-center card border-0 shadow fadeInDown animated" style="display: block;">
+                    <div class="col" style="padding-top: 20px;">
+                        <h4>Performance this week</h4>
+                    </div>
+
+                    <div class="col" style="padding-top: 20px; padding-bottom: 30px;">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                        <canvas id="myChart" style="height: 300px; width: 770px;"></canvas>
+                        <script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
+                        var chart = new Chart(ctx, {
+                          // The type of chart we want to create
+                          type: 'radar',
+                        
+                          // The data for our dataset
+                          data: {
+                            labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                            datasets: [
+                              {label: 'Completed Order',
+                              fill:true,
+                              backgroundColor:"rgba(54, 162, 235, 0.2)",
+                              borderColor:"rgb(54, 162, 235)",
+                              pointBackgroundColor:"rgb(54, 162, 235)",
+                              pointBorderColor:"#fff",
+                              pointHoverBackgroundColor:"#fff",
+                              pointHoverBorderColor:"rgb(54, 162, 235)",
+
+                              data: [98, 105, 72, 84, 45, 76, 110]},
+
+                              {label: 'Canceled Order',
+                              fill:true,
+                              backgroundColor:"rgba(255, 99, 132, 0.2)",
+                              borderColor:"rgb(255, 99, 132)",
+                              pointBackgroundColor:"rgb(255, 99, 132)",
+                              pointBorderColor:"#fff",
+                              pointHoverBackgroundColor:"#fff",
+                              pointHoverBorderColor:"rgb(255, 99, 132)",
+                              
+                              data: [12, 8, 24, 6, 3, 7, 11]}
+                              ]
+                          },
+                        
+                          // Configuration options go here
+                          options: {}
+                        });
+                        </script>
+                        </div>
+                </div>
+            </div>
+
+                <div class="row fadeInUp animated" style="margin-top: 3%;">
+                    <div class="col card border-0" style="padding-top: 10px;"><h4>Income</h4></div>
+                    <div class="col card border-0" style="padding-top: 10px; margin-left: 3%;"><h4>Outcome</h4></div>
+                </div>
+
+                <div class="row fadeInUp animated">
+                        <div class="col card border-0 shadow">
+                            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                            <canvas id="income" style="width: 380px;"></canvas>
+                            <script>
+                            var ctx = document.getElementById('income').getContext('2d');
+                            var chart = new Chart(ctx, {
+                              // The type of chart we want to create
+                              type: 'line',
+                            
+                              // The data for our dataset
+                              data: {
+                                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                                datasets: [{
+                                  label: 'income',
+                                  fill:true,
+                                  backgroundColor:"rgba(54, 162, 235, 0.2)",
+                                  borderColor:"rgb(54, 162, 235)",
+                                  pointBackgroundColor:"rgb(54, 162, 235)",
+                                  pointBorderColor:"#fff",
+                                  pointHoverBackgroundColor:"#fff",
+                                  pointHoverBorderColor:"rgb(54, 162, 235)",
+                                  data: [1276000, 987000, 1018000, 1570000, 1020000, 888000, 865000, 756000, 989000, 790000, 1340000, 720000]
+                                }]
+                              },
+                            
+                              // Configuration options go here
+                              options: {}
+                            });
+                            </script>
+                            </div>
+                        <div class="col card border-0 shadow" style="margin-left: 3%;">
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                                <canvas id="outcome" style="width: 380px;"></canvas>
+                                <script>
+                                var ctx = document.getElementById('outcome').getContext('2d');
+                                var chart = new Chart(ctx, {
+                                  // The type of chart we want to create
+                                  type: 'line',
+                                
+                                  // The data for our dataset
+                                  data: {
+                                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                                    datasets: [{
+                                      label: 'outcome',
+                                      fill:true,
+                                      backgroundColor:"rgba(255, 99, 132, 0.2)",
+                                      borderColor:"rgb(255, 99, 132)",
+                                      pointBackgroundColor:"rgb(255, 99, 132)",
+                                      pointBorderColor:"#fff",
+                                      pointHoverBackgroundColor:"#fff",
+                                      pointHoverBorderColor:"rgb(255, 99, 132)",
+                                      data: [660000, 480000, 380000, 780000, 550000, 620000, 420000, 380000, 600000, 464000, 638000, 500000]
+                                    }]
+                                  },
+                                
+                                  // Configuration options go here
+                                  options: {}
+                                });
+                                </script>
+                        </div>
+                    </div>
+         </div>
+    
+<script src="userpage.js"></script>       
+  
+</body> 
+</html>
+    

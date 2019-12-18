@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Jrp9PtHe0WapppUzxbIpMDWMAcV3qE4"></script>
+  <script src="https://unpkg.com/location-picker/dist/location-picker.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style-checkout.css">
     <link rel="stylesheet" href="animate.css">
@@ -12,7 +15,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-    <title>All Menu</title>
+    <title>Checkout</title>
+    <style type="text/css">
+      #map {
+        width: auto;
+        height: 20rem;
+      }
+    </style>
 </head>
 <body class="body">
     <!-- navbar -->
@@ -40,7 +49,7 @@
                     <a class="nav-link" href="#">Beverage</a> 
                 </li>
                 <li class="nav-item ml-auto">
-                    <a class="nav-link" href="#">   </a> 
+                  <a class="nav-link" href="404.html">404</a> 
                 </li>
                 <li class="nav-item ml-auto">
                   <a class="btn btn-outline-success my-2 my-sm-0 active" href="index cp.html" role="button"><i class="fas fa-home"></i> Home</a>
@@ -48,267 +57,229 @@
             </ul>
           </div>
           </nav>
-        </div>
-    <div class="row">
-            <div class="col">
-                <div class="card mt-3 ml-3 sticky-top filter-oke fadeInLeft animated" style="background: rgba(156, 238, 101,0.2);">
-                    <article class="card-group-item" >
-                      <header class="card-header">
-                        <h6 class="title">Range input </h6>
-                      </header>
-                      <div class="filter-content">
-                        <div class="card-body">
-                        <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label>Min</label>
-                          <input type="number" class="form-control" id="inputEmail4" placeholder="Rp 0">
+<div class="container" >
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-12 col-md-offset-3 justify-content-center mt-5 bg-light">
+        <h2 class="text-center pt-3">
+        Review and Checkout Your Order
+        </h2>
+        <hr/>
+        <div class="row">
+            <div class="col-8" style="border-right: 1px solid rgb(196, 196, 196);">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-6">
+                                  <h4 class="panel-title">
+                                    <h3 data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="pb-2"><i class="fas fa-dot-circle fa-xs"></i> Your Order</h3>
+                                  </h4>
+                                </div>
+                                <div class="col-6">
+                                    <a href="user-main-page.html" class="float-right pt-1"><i class="fas fa-plus fa-xs text-success "></i>Add More</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6 text-right">
-                          <label>Max</label>
-                          <input type="number" class="form-control" placeholder="Rp 100.000">
-                        </div>
-                        </div>
-                        </div> <!-- card-body.// -->
-                      </div>
-                    </article> <!-- card-group-item.// -->
-                    <article class="card-group-item">
-                      <header class="card-header">
-                        <h6 class="title">Selection </h6>
-                      </header>
-                      <div class="filter-content">
-                        <div class="card-body">
-                          <div class="custom-control custom-checkbox">
-                            <span class="float-right badge badge-light round">12</span>
-                              <input type="checkbox" class="custom-control-input" id="Check1">
-                              <label class="custom-control-label" for="Check1">Appetizer</label>
-                          </div> <!-- form-check.// -->
-                  
-                          <div class="custom-control custom-checkbox">
-                            <span class="float-right badge badge-light round">10</span>
-                              <input type="checkbox" class="custom-control-input" id="Check2">
-                             <label class="custom-control-label" for="Check2">Main Course</label>
-                          </div> <!-- form-check.// -->
-                  
-                          <div class="custom-control custom-checkbox">
-                            <span class="float-right badge badge-light round">17</span>
-                              <input type="checkbox" class="custom-control-input" id="Check3">
-                              <label class="custom-control-label" for="Check3">Dessert</label>
-                          </div> <!-- form-check.// -->
-                  
-                          <div class="custom-control custom-checkbox">
-                            <span class="float-right badge badge-light round">12</span>
-                              <input type="checkbox" class="custom-control-input" id="Check4">
-                              <label class="custom-control-label" for="Check4">Beverage</label>
-                          </div>
-                          <div class="custom-control custom-checkbox">
-                            <span class="float-right badge badge-light round">9</span>
-                              <input type="checkbox" class="custom-control-input" id="Check5">
-                              <label class="custom-control-label" for="Check5">Snacks</label>
-                          </div> <!-- form-check.// -->
-                        </div> <!-- card-body.// -->
-                      </div>
-                    </article> <!-- card-group-item.// -->
-                  </div>
-            </div> 
-        <div class="col-9">
-            
-          <div class="row ml-3 mt-1">
-            <div class="block">
-                <div class="talkbubble my-2"> <h3 class="ml-3"> <i class="fas fa-utensils mt-2"></i> All Menu</h3> </div>  
+                        <div id="collapseOne" class="panel-collapse collapse show">
+                            <div class="container">
+                                <div class="card ml-2 mb-3 cartcard" style="height:7rem;">
+                                    <div class="row no-gutters">
+                                      <div class="col-md-3 mr-4">
+                                        <img src="image/steak.jpg" class="rounded card-img cart-img" style="height: 7rem; width: auto;" alt="...">
+                                      </div>
+                                      <div class="col-md-8 float-left">
+                                        <div class="card-body">
+                                          <!-- <button type="button" onclick="animateCSS('.cartcard', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:8rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button> -->
+                                          <h4 class="card-title txtB text-wrap"><b> Beef Steak</b></h4>
+                                          <p class="card-text text-muted" style=" margin-bottom: 0;">Rp 50.000</p>
+                                          <div class="input-group float-right mr-1 ml-auto mb-1 pr-1" style="position:absolute; bottom:1rem; right: 0;">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-left-minus btn-sm btn-danger"  data-type="minus" data-field="">
+                                                  <i class="fas fa-minus fa-xs"></i>
+                                                </button>
+                                            </span>
+                                            <input type="text" id="quantity" name="quantity" class="form-control input-number text-center btn-sm" value="1" min="2" max="100">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-right-plus btn-sm btn-success btn-number" data-type="plus" data-field="">
+                                                    <span class="glyphicon glyphicon-plus"><i class="fas fa-plus fa-xs"></i></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                              <div class="row-1">
+                                                  
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="card ml-2 mb-3 cartcard" style="height:7rem;">
+                                    <div class="row no-gutters">
+                                      <div class="col-md-3 mr-4">
+                                        <img src="image/salad.jpg" class="rounded card-img cart-img" style="height: 7rem; width: auto;" alt="...">
+                                      </div>
+                                      <div class="col-md-8 float-left">
+                                        <div class="card-body">
+                                          <!-- <button type="button" onclick="animateCSS('.cartcard', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:8rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button> -->
+                                          <h4 class="card-title txtB text-wrap"><b> Salad</b></h4>
+                                          <p class="card-text text-muted" style=" margin-bottom: 0;">Rp 30.000</p>
+                                          <div class="input-group float-right mr-1 ml-auto mb-1 pr-1" style="position:absolute; bottom:1rem; right: 0;">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-left-minus2 btn-sm btn-danger"  data-type="minus" data-field="">
+                                                  <i class="fas fa-minus fa-xs"></i>
+                                                </button>
+                                            </span>
+                                            <input type="text" id="quantity2" name="quantity2" class="form-control input-number text-center btn-sm" value="1" min="1" max="100">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-right-plus2 btn-sm btn-success btn-number" data-type="plus" data-field="">
+                                                    <span class="glyphicon glyphicon-plus"><i class="fas fa-plus fa-xs"></i></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                              <div class="row-1">
+                                                  
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="card ml-2 mb-3 cartcard" style="height:7rem;">
+                                    <div class="row no-gutters">
+                                      <div class="col-md-3 mr-4">
+                                        <img src="image/tea.jpg" class="rounded card-img cart-img" style="height: 7rem; width: auto;" alt="...">
+                                      </div>
+                                      <div class="col-md-8 float-left">
+                                        <div class="card-body">
+                                          <!-- <button type="button" onclick="animateCSS('.cartcard', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:8rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button> -->
+                                          <h4 class="card-title txtB text-wrap"><b> Tea</b></h4>
+                                          <p class="card-text text-muted" style=" margin-bottom: 0;">Rp 5.000</p>
+                                          <div class="input-group float-right mr-1 ml-auto mb-1 pr-1" style="position:absolute; bottom:1rem; right: 0;">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-left-minus3 btn-sm btn-danger"  data-type="minus" data-field="">
+                                                  <i class="fas fa-minus fa-xs fa-xs"></i>
+                                                </button>
+                                            </span>
+                                            <input type="text" id="quantity3" name="quantity3" class="form-control input-number text-center btn-sm" value="1" min="1" max="100">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="quantity-right-plus3 btn-sm btn-success btn-number" data-type="plus" data-field="">
+                                                    <span class="glyphicon glyphicon-plus"><i class="fas fa-plus fa-xs fa-xs"></i></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                              <div class="row-1">
+                                                  
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                    </div>
+                </div>
+              </div>
             </div>
-          
-            <div class="col-12">
-              <div class="container-fluid ">
-                  <div class="row mr-2 mb-2">
-                      <div class="col-sm-6 col-lg-3 mt-2 mx-auto">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>    
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                            <div class="card-body">
-                              <h5 class="card-title">Steak</h5>
-                              <p class="card-text">Hell yeah, it's a fucking steak</p>
-                              <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                              <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                            </div>   
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>   
-                          </div>
-                        </div>
-                      </div>
-                  <div class="row mr-2 mb-2">
-                      <div class="col-sm-6 col-lg-3 mt-2 mx-auto">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>    
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                            <div class="card-body">
-                              <h5 class="card-title">Steak</h5>
-                              <p class="card-text">Hell yeah, it's a fucking steak</p>
-                              <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                              <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                            </div>   
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>   
-                          </div>
-                        </div>
-                      </div>
-                  <div class="row mr-2 mb-2">
-                      <div class="col-sm-6 col-lg-3 mt-2 mx-auto">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>    
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                            <div class="card-body">
-                              <h5 class="card-title">Steak</h5>
-                              <p class="card-text">Hell yeah, it's a fucking steak</p>
-                              <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                              <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                            </div>   
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-2">
-                          <div class="card card-cat yess" style="width: 14rem;">
-                            <img src="Image/steak.jpg" class="card-img-top">
-                              <div class="card-body">
-                                <h5 class="card-title">Steak</h5>
-                                <p class="card-text">Hell yeah, it's a fucking steak</p>
-                                <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
-                                <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
-                              </div>   
-                          </div>
-                        </div>
-                      </div>                                           
-              </div>     
-            </div>
-          </div>
-        </div>    
-    </div>
+            <div class="col-4">
+                <tr>
+                    <td style="">
+                        <label for="id_email">Customer Name:</label></td>
+                    <td>
+                        <input class="form-control" id="id_email" name="email"
+                               required="required" type="text" placeholder="Your Name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="">
+                        <label for="id_address_line_1">Address:</label></td>
+                    <td>
+                        <input class="form-control" id="id_address_line_1" style="height: 3rem;"
+                               name="address_line_1" required="required" type="text" placeholder="Your Address"/>
+                        <a href="#" class="btn btn-primary btn-sm active mt-1" role="button" data-toggle="modal" data-target="#testmap">Select</a>
+                    </td>
+                    
+                </tr>
+                <tr>
+                  <h2 class="text-transparent"> 
+                  </h2>
+                </tr>
+                <tr>
+                    <td style="height: 10rem;">
+                        <label for="id_address_line_2">Note for the Order:</label></td>
+                    <td>
+                        <input class="form-control" style="height: 4rem" id="id_address_line_2"
+                               name="address_line_2" type="text" placeholder=""/>
+                    </td>
+                </tr>
 
-    <div class="modal fade" id="produk1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Product Detail</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body" style="position: relative;">
-              <div class="row">
-                  <img class="rounded mx-auto " src="Image/steak.jpg" style="display: block;  height: 16rem; width: auto;">
-                <div class="col-9">
-                  
+                <div class="row pt-3">
+                  <div class="col-6">
+                  <h4 style="bottom: 0;">Total: </h3>
+                  </div>
+                  <div class="col-6">
+                    <h3 class="text-right"><b>4 </b>Items</h3>
+                  </div>
                 </div>
-              </div>
-              <div class=row  >
-                <div class="col md-6 ml-5">
-                  <table class="  table table-borderless">
-                  <tr>  
-                    <th> Menu Name </th>
-                  <td> Steak </td>  
-                  <!-- <div class="container-fluid"> -->
-                  </tr>
-                  <tr>  
-                    <th> Price </th>
-                  <td> Rp 50.000 </td>
-                  </tr>
-                  <tr>  
-                    <th> Description</th>
-                  <td> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </td>
-                  </tr>
-                  </table>
-                </div>
-                
-              </div>
+                <div class="row pt-1">
+                    <div class="col-6">
+                    <h4 style="bottom: 0;">Price: </h3>
+                    </div>
+                    <div class="col-6">
+                      <h4 class="text-right"><b>Rp 120.000</b></h3>
+                    </div>
+                  </div>
+                  <div class="row pt-1 ">
+                      <div class="col">
+                          <a id="chckbtn" href="#" class="btn btn-success active mt-1" style="position: absolute; right: 1rem;" role="button" >Checkout</a>
+                      </div>
+                  </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-              <button type="button" class="btn btn-primary"><i class="fas fa-utensils"></i>  Buy</button>
-            </div>
-          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" id="testmap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pick Location</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div id="map"></div>
+            <br>
+            <button id="confirmPosition">Confirm Location</button>
+            <br>
+            <p>Location: <span id="onIdlePositionView"></span></p>
+            <!-- <p>On click position: <span id="onClickPositionView"></span></p> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+          <!-- <button type="button" class="btn btn-primary"></button> -->
         </div>
       </div>
+    </div>
+  </div>
 
-      <a href="user-main-page.html" class="btn btn-outline-danger mt-3 mb-1 fabtn fadeInLeft animated" ><i class="fas fa-chevron-left"></i> Back</a>
+
+      <a href="user-main-page.html" class="btn btn-outline-danger mt-3 mb-1 fabtn fadeInLeft animated" aria-pressed="true"><i class="fas fa-chevron-left"></i> Back</a>
       <a href="user-main-page.html" class="btn mt-3 mb-1 greet-text fadeOutUp animated" > Checkout </a>  
 
     <footer id="sticky-footer" class="mt-3 py-4 bg-light green-bg text-black-70">
@@ -339,7 +310,36 @@ $(document).ready(function() {
     $('#box').hScroll(1350); // You can pass (optionally) scrolling amount
 });
            </script> -->
-    
+           <script>
+              // Get element references
+              var confirmBtn = document.getElementById('confirmPosition');
+              var onClickPositionView = document.getElementById('onClickPositionView');
+              var onIdlePositionView = document.getElementById('onIdlePositionView');
+              var map = document.getElementById('map');
+            
+              // Initialize LocationPicker plugin
+              var lp = new locationPicker(map, {
+                setCurrentPosition: true, // You can omit this, defaults to true
+                lat: -7.049697,
+                lng: 110.391044
+              }, {
+                zoom: 15 // You can set any google map options here, zoom defaults to 15
+              });
+            
+              // Listen to button onclick event
+              confirmBtn.onclick = function () {
+                // Get current location and show it in HTML
+                var location = lp.getMarkerPosition();
+                onClickPositionView.innerHTML = '' + location.lat + ',' + location.lng;
+              };
+            
+              // Listen to map idle event, listening to idle event more accurate than listening to ondrag event
+              google.maps.event.addListener(lp.map, 'idle', function (event) {
+                // Get current location and show it in HTML
+                var location = lp.getMarkerPosition();
+                onIdlePositionView.innerHTML = '  ' + location.lat + ',' + location.lng;
+              });
+            </script>
     <script src="userpage.js"></script>       
   
 </body> 

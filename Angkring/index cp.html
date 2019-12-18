@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="animate.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -15,7 +16,7 @@
 </head>
 <body >
    <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light justify-content-center" style="background-color: rgb(255,255,255,0.7); ">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center fadeInDown animated" style="background-color: rgb(255,255,255,0.7); ">
       <div class="container-fluid">    
         <a class="navbar-brand" href="#"><img src="image/angkring logo.png" class="d-inline-block " alt="logo" style="width: 60px;">  </a>
         <h3 class="ml-auto bounce fadeInDown animated delay-1s" style="font-family: 'lobster', cursive;">Angkring</h3>
@@ -52,7 +53,7 @@
     <!--Carousel-->
     <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
-              <ol class="carousel-indicators">
+              <ol class="carousel-indicators fadeInUp animated">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">Salad</li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1">Steak</li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2">Cookies</li>
@@ -62,28 +63,28 @@
                 <div class="carousel-item active align-items-center" style="max-width: 100%;">
                   <img src="image/salad.jpg"  alt="salad" class="d-block w-100 min-vh-100" >
                   <!-- <div class="carousel-caption d-none d-md-block"> -->
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption d-none d-md-block fadeInUp animated">
                     <h5 class="captionn">First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="Image/steak.jpg" class="d-block w-100 min-vh-100" alt="steak">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption d-none d-md-block fadeInUp animated">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="Image/cookies.jpg" class="d-block w-100 min-vh-100" alt="cookies">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption d-none d-md-block fadeInUp animated">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                     <img src="Image/tea.jpg"  class="d-block w-100 min-vh-100" alt="tea">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block fadeInUp animated">
                       <h5>Fourth slide label</h5>
                       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </div>
@@ -106,18 +107,18 @@
               <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title ml-auto" id="exampleModalCenterTitle">Login</h5>
+                    <h5 class="modal-title ml-auto" id="exampleModalCenterTitle"><b>Login</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
+                  <div class="modal-body py-auto">
                     <div class="row">
-                      <div class="col">
-                        <img class="rounded mb-1" src="Image/kopi.jpg" alt="yo" style="height: 300pt; width: 300pt;">
+                      <div class="col-6">
+                        <img class="rounded" src="Image/kopi.jpg" alt="yo" style="height: auto; width: 25rem;">
                       </div>
                       <div class="col mt-5" style="vertical-align: middle;">
-                        <div class="row" >
+                        <div class="row justify-content-center" >
                            
                             <form>
                                 <div class="input-group form-group">
@@ -142,9 +143,9 @@
                               </form>
                               
                             </div>
-                            <div class="row-6 mt-5">
-                                <a href="user-main-page.html" class=" btn btn-success  login_btn2" role="button" style=" margin-right: 5%;" aria-pressed="true">Login as User</a>
-                                <a href="admin-main-page.html" class="btn btn-danger login_btn2" role="button" style="margin-right: 5%;" aria-pressed="true">Login as Admin</a>
+                            <div class="row-6 mt-5 btn-group btn-block px-1 mr-1 pr-3">
+                                <a href="user-main-page.html" class=" btn btn-success  login_btn2 " role="button" style="" aria-pressed="true">Login as User</a>
+                                <a href="admin-main-page.html" class="btn btn-danger login_btn2" role="button" style="" aria-pressed="true">Login as Admin</a>
                             </div>
                              
                            </div>

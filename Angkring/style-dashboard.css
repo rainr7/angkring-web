@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:400,700");
+html, body {
+  font-family: 'Hind', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('Image/bg-food.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden ;
+  overflow-y:visible !important;
+}
+
+.navbar-light{
+  transition:500ms ease;
+  
+}
+.navbar-expand-lg.scrolled{
+  background:#000;
+}
+
+.sidenav {
+  height: 75%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1234902; /* Stay on top */
+  top: 10%; /* Stay at the top */
+  right: 0;
+  background-color:   rgba(230, 230, 230, 0.9); 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 1rem; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav img{
+  object-fit: cover;
+  height: 7.17rem;
+  width: 7rem;
+}
+
+/* The navigation menu links */
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+} */
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav .checkbtn {
+  position: absolute;
+  top: 100%;
+  right: 25px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.filter-oke{
+  top: 6.2rem;
+}
+
+.hori-scroll > .row { 
+  overflow-x: auto; 
+  white-space: nowrap; 
+} 
+
+.hori-scroll > .row > .col-3 { 
+  display: inline-block; 
+  float: none; 
+} 
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: rgba(192, 192, 192, 0.3);    
+}
+
+.mx-6{
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border-radius: .25rem;
+}
+
+.card-cat{
+  border: none;
+}
+
+
+.yess{
+  background-color:rgb(238, 255, 227);
+}
+
+.card-cat .img{
+  background-color: black;
+}
+
+ 
+.card-cat:hover,
+.card-cat.hover {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  transform:scale(1.02);
+  
+  box-shadow: 1px 8px 20px grey;
+    -webkit-transition:  box-shadow 0.15 s ease-in;
+}
+
+
+.talkbubble {
+  width: 21rem;
+  height: 3rem;
+  background:rgba(156, 238, 101,0.5);
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0.7rem;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid rgba(156, 238, 101,0.5);
+  border-bottom: 13px solid transparent;
+}
+
+.overlay-warna{
+  height:100%;
+   width: 15rem;
+   position:absolute;
+   background-color:#000;
+   opacity:.3;
+   
+}
+
+
+
+.carousel-control-prev-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.text-white{
+  color: rgba(255, 255,255,0.1);
+}
+
+.yes{
+  background-color: rgba(255,255,255,0.4);
+  padding-bottom: -10rem;
+}
+
+.btn-browse:hover {
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+  transform:scale(1.01);
+  
+  box-shadow: 1px 3px 5px grey;
+    -webkit-transition:  box-shadow 0.15 s ease-in;
+}
+
+/* .modal{
+  position: absolute;
+  left: 0%;
+  top: -100%;
+  
+  
+  
+} */
+.modal{
+  border-color: transparent;
+}
+
+.modal-content {
+  background-color: transparent;
+  width: 34rem;
+  left: 50%;
+  margin-left: -17rem;
+  
+}   
+
+.modal-title{
+ 
+  
+  font-size: 20pt;
+  
+
+}
+
+.modal-header {
+  padding:9px 15px;
+  width: 34rem;
+  position: relative;
+  left: 50%; 
+  margin-left: -17rem;
+
+  background-color: rgb(192, 240, 158);
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding:9px 15px;
+  border-bottom:1px solid #eee;
+  background-color: rgb(255, 255, 255,0.95);
+  width: 34rem;
+  left: 50%; margin-left: -17rem; 
+   border-top-left-radius: 1px;
+   border-top-right-radius: 1px;
+}
+.bottom-border { border-bottom: 1px dashed black; }
+
+.modal-footer{
+  background-color: rgb(255, 255, 255,0.8);
+   border-top-color: teal;
+   width: 34rem;
+   position: relative;
+   left: 50%; margin-left: -17rem;
+  border-bottom-left-radius: 1px;
+   border-bottom-right-radius: 1px;
+} */
+
+.greet-text{
+  position: relative;
+  
+  width: 20rem;
+  margin-left: -10rem;        
+  line-height: 20px;
+  text-align: center;
+  font-size: 20pt;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  transition: ease all 1.3s;
+  position: fixed;
+  top:20%;
+  left: 50%;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  /* z-index: 99999; */
+}
+
+.fabtn2{
+  position: relative;
+  width: 20rem;
+  margin-left: -10rem;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: block;        
+  line-height: 20px;
+  text-align: center;
+  font-size: 20pt;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  top: 2%;
+  left:50%;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.fabtn{
+
+
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;        
+  line-height: 20px;
+  text-align: left;
+  font-size: 15pt;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  left: 1%;
+  bottom:2%;
+}
+.fabtn-edit{
+
+
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;        
+  line-height: 20px;
+  text-align: left;
+  font-size: 15pt;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  left: 1%;
+  bottom:2%;
+}
+/* .fabtn:hover{background: #26a74a} */
+
+.green-bg{
+ background-image: url('Image/footer green.jpg');
+
+}
+
+.act-btn{
+  background:green;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  right: 30px;
+  bottom:30px;
+}
+.act-btn:hover{background: blue}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 15%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(235, 235, 235); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #000000;
+}
+
+/* Style page content */
+.main {
+  margin-left: 20%; /* Same as the width of the sidebar */
+  margin-top: 2%;
+  margin-right: 15%;
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.big-box,
+.mini-box {
+    background-color: #10BCFF;
+    color: white;
+    text-align: center;
+    margin: 2px;
+    font-size: 1.5em;
+}
+.big-box {
+    height: 65px;
+    line-height: 65px;
+}
+.mini-box {
+    height: 30px;
+    line-height: 30px;
+}

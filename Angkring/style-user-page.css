@@ -13,6 +13,7 @@ html, body {
 
 .navbar-light{
   transition:500ms ease;
+  z-index: 100;
   
 }
 .navbar-expand-lg.scrolled{
@@ -20,11 +21,11 @@ html, body {
 }
 
 .sidenav {
-  height: 75%; /* 100% Full-height */
+  height: 100%; /*75%;  100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1234902; /* Stay on top */
-  top: 10%; /* Stay at the top */
+  top: 0; /* Stay at the top */
   right: 0;
   background-color:   rgba(230, 230, 230, 0.9); 
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -34,7 +35,7 @@ html, body {
 
 .sidenav img{
   object-fit: cover;
-  height: 7.17rem;
+  height: 8rem;
   width: 7rem;
 }
 
@@ -64,7 +65,8 @@ html, body {
 
 .sidenav .checkbtn {
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
+  bottom: 5%;
   right: 25px;
 }
 
@@ -80,9 +82,17 @@ html, body {
   .sidenav a {font-size: 18px;}
 }
 
+.input-group{
+  width: 7rem;
+  position: sticky;
+  right: 0;
+}
+
 .filter-oke{
   top: 6.2rem;
 }
+
+
 
 .hori-scroll > .row { 
   overflow-x: auto; 
@@ -100,7 +110,8 @@ html, body {
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: rgba(192, 192, 192, 0.3);    
+  background: rgba(192, 192, 192, 0.548);
+    /* background: rgba(192, 192, 192, 0.3);     */
 }
 
 .mx-6{
@@ -200,6 +211,7 @@ html, body {
 } */
 .modal{
   border-color: transparent;
+  z-index: 2020;
 }
 
 .modal-content {
@@ -309,7 +321,7 @@ html, body {
   text-decoration: none;
   transition: ease all 0.3s;
   position: fixed;
-  left: 1%;
+  left: 2%;
   bottom:2%;
 }
 /* .fabtn:hover{background: #26a74a} */
@@ -319,3 +331,6 @@ html, body {
 
 }
 
+.error{
+  animation-iteration-count: infinite;
+}

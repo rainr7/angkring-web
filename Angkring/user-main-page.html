@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<htmldiv lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
           <a class="navbar-brand" href="#"><img src="image/angkring logo.png" class="d-inline-block " alt="logo" style="width: 60px; font-family: 'Lobster', cursive;"></a>
           <h3 class="ml-auto bounce fadeInDown animated delay-1s" style="font-family: 'lobster', cursive;">Angkring</h3>
           <a class="btn btn-primary pull-right ml-auto mr-2" href="#" role="button" onclick="openNav()"><i class="fas fa-shopping-cart"></i></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent,#filtercollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -40,7 +40,7 @@
                     <a class="nav-link" href="#">Beverage</a> 
                 </li>
                 <li class="nav-item ml-auto">
-                    <a class="nav-link" href="#">   </a> 
+                    <a class="nav-link" href="404.html">404</a> 
                 </li>
                 <li class="nav-item ml-auto">
                   <a class="btn btn-outline-success my-2 my-sm-0 active" href="index cp.html" role="button"><i class="fas fa-home"></i> Home</a>
@@ -50,67 +50,129 @@
           </nav>
 
           <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="javascript:void(0)" class="closebtn d-inline pull-right" onclick="closeNav()">&times;</a>
+              <h2 class="ml-2 text-muted"> <i class="fas fa-shopping-cart"></i> Your Cart</h2>
+              <hr/>
             <div class="col">
-              <div class="row">
-                  <h2 class="ml-2 text-muted"> <i class="fas fa-shopping-cart"></i> Your Cart</h2>
-              </div>
+             
                 <div class="row">
-                    <div class="card ml-2 mb-3 cartcard" style="width: 24rem; height: 7.17rem; ">
+                    <div class="card ml-2 mb-3 cartcard" style="width: 24rem; height: 8rem; ">
                         <div class="row no-gutters">
                           <div class="col-md-4">
                             <img src="image/steak.jpg" class="rounded card-img cart-img" alt="...">
                           </div>
                           <div class="col-md-8 pull-left">
                             <div class="card-body">
-                              <button type="button" onclick="animateCSS('.cartcard', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
+                              <button type="button" onclick="animateCSS('.cartcard', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:8rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
                               <h4 class="card-title txtB text-wrap" style="margin-left: -1.50rem;"><b> Beef Steak</b></h4>
-                              <p class="card-text text-muted" style="margin-left: -1.50rem;">Rp 50.000</p>
+                              <p class="card-text text-muted" style="margin-left: -1.50rem; margin-bottom: 0;">Rp 50.000</p>
+                              <div class="input-group pull-right mr-1 ml-auto mb-5 pr-1">
+                                <span class="input-group-btn">
+                                    <button type="button" class="quantity-left-minus btn-sm btn-danger"  data-type="minus" data-field="">
+                                      <i class="fas fa-minus fa-xs"></i>
+                                    </button>
+                                </span>
+                                <input type="text" id="quantity" name="quantity" class="form-control input-number text-center btn-sm" value="1" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="quantity-right-plus btn-sm btn-success btn-number" data-type="plus" data-field="">
+                                        <span class="glyphicon glyphicon-plus"><i class="fas fa-plus fa-xs"></i></span>
+                                    </button>
+                                </span>
+                            </div>
+                                  <div class="row-1">
+                                      
+                                </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    <div class="card ml-2 mb-3 cartcard2" style="width: 24rem; height: 7.17rem; ">
+                    <div class="card ml-2 mb-3 cartcard2" style="width: 24rem; height: 8rem; ">
                         <div class="row no-gutters">
                           <div class="col-md-4">
                             <img src="image/steak.jpg" class="rounded card-img cart-img" alt="...">
                           </div>
                           <div class="col-md-8 pull-left">
                             <div class="card-body">
-                              <button type="button" onclick="animateCSS('.cartcard2', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
+                              <button type="button" onclick="animateCSS('.cartcard2', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:8rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
                               <h4 class="card-title txtB text-wrap" style="margin-left: -1.50rem;"><b> Beef Steak</b></h4>
-                              <p class="card-text text-muted" style="margin-left: -1.50rem;">Rp 50.000</p>
+                              <p class="card-text text-muted" style="margin-left: -1.50rem; margin-bottom: 0;">Rp 50.000</p>
+                              <div class="input-group pull-right mr-1 ml-auto mb-5 pr-1">
+                                <span class="input-group-btn">
+                                    <button type="button" class="quantity-left-minus2 btn-sm btn-danger"  data-type="minus" data-field="">
+                                      <i class="fas fa-minus fa-xs"></i>
+                                    </button>
+                                </span>
+                                <input type="text" id="quantity2" name="quantity" class="form-control input-number text-center btn-sm" value="1" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="quantity-right-plus2 btn-sm btn-success btn-number" data-type="plus" data-field="">
+                                        <span class="glyphicon glyphicon-plus"><i class="fas fa-plus fa-xs"></i></span>
+                                    </button>
+                                </span>
+                            </div>
+                                  <div class="row-1">
+                                      
+                                </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    <div class="card ml-2 mb-3 cartcard3" style="width: 24rem; height: 7.17rem; ">
+                    <div class="card ml-2 mb-3 cartcard3" style="width: 24rem; height: 8rem; ">
                         <div class="row no-gutters">
                           <div class="col-md-4">
                             <img src="image/steak.jpg" class="rounded card-img cart-img" alt="...">
                           </div>
                           <div class="col-md-8 pull-left">
                             <div class="card-body">
-                              <button type="button" onclick="animateCSS('.cartcard3', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:7.1rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
+                              <button type="button" onclick="animateCSS('.cartcard3', 'lightSpeedOut')" class="btn btn-danger float-top float-right" style="height:8rem; margin-top:-1.30rem; margin-right: -1.25rem;;">X</button>
                               <h4 class="card-title txtB text-wrap" style="margin-left: -1.50rem;"><b> Beef Steak</b></h4>
-                              <p class="card-text text-muted" style="margin-left: -1.50rem;">Rp 50.000</p>
+                              <p class="card-text text-muted" style="margin-left: -1.50rem; margin-bottom: 0;">Rp 50.000</p>
+                              <div class="input-group pull-right mr-1 ml-auto mb-5 pr-1">
+                                <span class="input-group-btn">
+                                    <button type="button" class="quantity-left-minus3 btn-sm btn-danger"  data-type="minus" data-field="">
+                                      <i class="fas fa-minus fa-xs"></i>
+                                    </button>
+                                </span>
+                                <input type="text" id="quantity3" name="quantity3" class="form-control input-number text-center btn-sm" value="1" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="quantity-right-plus3 btn-sm btn-success btn-number" data-type="plus" data-field="">
+                                        <span class="glyphicon glyphicon-plus"><i class="fas fa-plus fa-xs"></i></span>
+                                    </button>
+                                </span>
+                            </div>
+                                  <div class="row-1">
+                                      
+                                </div>
                             </div>
                           </div>
                         </div>
                       </div>
+
+                
                 </div>
-                <button type="button" class="btn btn-success checkbtn btn-sm" onclick="location.href='checkout.html';"> <i class="fas fa-shopping-cart"></i> Checkout</button>
+                
             </div>  
+            <button type="button" class="btn btn-success checkbtn btn-sm pull-bottom" onclick="location.href='checkout.html';"> <i class="fas fa-shopping-cart"></i> Checkout</button>
           </div>
             
         
     <div class="row">
+      
             <div class="col-3">
-                <div class="card mt-3 ml-3 sticky-top filter-oke fadeInLeft animated delay-1s" style="background: rgba(156, 238, 101,0.2);">
+              <div class="row ml-3 mt-2" style="bottom: 8%;">
+                <!-- <div class="input-group ml-3 border-0 shadow fadeInLeft animated sticky-top" style="bottom: 8%; width: 15rem;">
+                  <input type="text" id="quantity" name="quantity" class="form-control btn-sm"  placeholder="Steak, Beverages, etc. " >
+                  <span class="input-group-btn">
+                      <button type="button" class="quantity-right-plus btn-sm btn-primary btn-number" data-type="plus" data-field="">
+                          <span class="glyphicon glyphicon-plus"><i class="fas fa-search fa-xs"></i></span>
+                      </button>
+                  </span>
+                </div> -->
+              </div>
+                <div class="card mt-3 ml-3 sticky-top filter-oke fadeInLeft animated delay-1s" style="background: #ffffff; z-index: 99;">
                     <header class="card-header">
                         <!-- <h6 class="title text-center font-weight-bold">Filter</h6> -->
-                        <a class="btn btn-link text-weight-bold text-center text-decoration-none" style=" font-size: 15pt;" data-toggle="collapse" href="#filtercollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
-                          Filter
+                        <a class="btn btn-link text-weight-bold text-center text-decoration-none" style=" font-size: 15pt; padding: 0;" data-toggle="collapse" href="#filtercollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          Filter     <i class="fas fa-caret-down"></i>
                         </a>
                       </header>   
                   <div class="collapse" id="filtercollapse">
@@ -182,9 +244,17 @@
             <!-- category -->
  
             <div class="row ml-3">
-              <div class="talkbubble my-2"> <h3 class="ml-4"> <i class="fas fa-utensils mt-2"></i> Browse by Categories</h3> </div>  
+              <div class="talkbubble my-2 fadeInUp animated"> <h3 class="ml-4"> <i class="fas fa-utensils mt-2"></i> Browse by Categories</h3> </div>  
+                  <div class="input-group ml-4 border-0 mt-3 fadeInRight animated " style=" left: 80%; width: 15rem;">
+                    <input type="text" id="quantity" name="quantity" class="form-control btn-sm"  placeholder="Steak, Beverages, etc. " >
+                    <span class="input-group-btn">
+                        <button type="button" class="quantity-right-plus btn-sm btn-primary btn-number" data-type="plus" data-field="">
+                            <span class="glyphicon glyphicon-plus"><i class="fas fa-search fa-xs"></i></span>
+                        </button>
+                    </span>
+                  </div>
                     <div class="container-fluid hori-scroll my-auto">
-                        <div class="row flex-nowrap flex-row my-2">
+                        <div class="row flex-nowrap flex-row my-2 ">
                             <div class="col-3 mx-6 mr-1">
                                     <div class="card-cat" style="width: 15rem;  margin: auto;">
                                             <div class="overlay-warna"></div>
@@ -255,13 +325,13 @@
             <div class="row  mt-2  ml-3">
                 <div class="col">
                     <div class="row mb-2">
-                        <div class="talkbubble my-2">
+                        <div class="talkbubble my-2 fadeInUp animated">
                           <h3 class="ml-4 mt-2"><i class="fas fa-utensils"></i> Our Special Selection</h3>
                         </div>
                     </div>
                     <div class="row">
                     <div class="col-lg-6 col-sm-12 ">
-                    <div class="bd-example mr-3" >
+                    <div class="bd-example mr-3 fadeInUp animated" >
                         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -302,7 +372,7 @@
                         </div>
                     </div>
                     </div>
-                      <div class=" col-6 d-none d-md-block jumbotron yes " style="height: 17rem;">
+                      <div class=" col-6 d-none d-md-block jumbotron yes fadeInRight animated " style="height: 17rem;">
                         <div class="container fluid">
                           <h2 class="">Angkring's finest selection</h2>
                           <p class="">This is a modified jumbotron that occupies the entire horizontal space of its parent. This is a modified jumbotron that occupies the entire horizontal space of its parent. This is a modified jumbotron that occupies the </p>
@@ -319,8 +389,8 @@
                <div class="container-fluid">
                 <div class="row mb-2">
                   <div class="col-6">
-                    <div class="talkbubble my-2 pt-1">
-                      <h3 class="ml-3 mt-2" style="margin-top: 20rem;"><i class="fas fa-utensils"></i> What's popular today?</h3>
+                    <div class="talkbubble my-2 pt-1 fadeInUp animated">
+                      <h3 class="ml-3 mt-2" style="margin-top: 20rem;"><i class="fas fa-utensils"></i> What's On the Menu?</h3>
                     </div>
                   </div>
                   <div class="col-6">
@@ -329,11 +399,11 @@
                </div>
               
                 <div class="col col-sm-12 col-md-12">
-                        <div class="container-fluid bg-transparent">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div id="inam" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
+                        <div class="container-fluid bg-transparent ">
+                            <div class="row ">
+                                <div class="col-sm-12 ">
+                                    <div id="inam" class="carousel slide " data-ride="carousel">
+                                        <div class="carousel-inner pb-5">
                                             <div class="carousel-item active">
                                                 <div class="container">
                                                     <div class="row">
@@ -342,7 +412,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body yess">
                                                                   <h5 class="card-title">Steak</h5>
-                                                                  <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                  <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                   <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                   <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                                 </div>    
@@ -353,7 +423,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                               <div class="card-body yess">
                                                                 <h5 class="card-title">Steak</h5>
-                                                                <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                 <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                 <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                               </div>   
@@ -364,7 +434,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body yess">
                                                                   <h5 class="card-title">Steak</h5>
-                                                                  <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                  <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                   <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                   <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                                 </div>
@@ -375,7 +445,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body yess">
                                                                   <h5 class="card-title">Steak</h5>
-                                                                  <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                  <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                   <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                   <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                                 </div>   
@@ -401,7 +471,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body yess">
                                                                   <h5 class="card-title">Steak</h5>
-                                                                  <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                  <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                   <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                   <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                                 </div>
@@ -413,7 +483,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body yess">
                                                                   <h5 class="card-title">Steak</h5>
-                                                                  <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                  <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                   <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                   <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                                 </div>    
@@ -424,7 +494,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                               <div class="card-body yess">
                                                                 <h5 class="card-title">Steak</h5>
-                                                                <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                 <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                 <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                               </div>   
@@ -435,7 +505,7 @@
                                                               <img src="Image/steak.jpg" class="card-img-top">
                                                                 <div class="card-body yess">
                                                                   <h5 class="card-title">Steak</h5>
-                                                                  <p class="card-text">Hell yeah, it's a fucking steak</p>
+                                                                  <p class="card-text">Premium Beef skirt steak with demiglace sauce</p>
                                                                   <p class="font-weight-bold"><i class="fas fa-tag mb-2"></i>  Rp 50.000</p>
                                                                   <a href="#" class="btn btn-primary btn-block mt-3 mb-1" data-target="#produk1" data-toggle="modal"> <i class="fas fa-shopping-basket"></i>  Detail</a>                
                                                                 </div>
@@ -540,7 +610,9 @@
                         </div>
                     </div>
                 </div>
-            </div>         
+            </div> 
+            
+
 
 <!-- modal cart -->
                                 <div class="modal right fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -589,8 +661,16 @@
                                   </div>
 
 <!-- modal end -->
-            <a href="user-main-page.html" class="btn mt-3 mb-1 fabtn2 fadeOutUp animated" > Welcome! </a>                      
-            <a href="user-main-page.html" class="btn btn-outline-danger mt-3 mb-1 fabtn fadeInLeft animated" ><i class="fas fa-chevron-left"></i> Back</a>
+            <!-- <div class="input-group ml-4 border-0 shadow fadeInLeft animated " style="bottom: 78%; left: 80%; width: 15rem;">
+              <input type="text" id="quantity" name="quantity" class="form-control btn-sm"  placeholder="Steak, Beverages, etc. " >
+              <span class="input-group-btn">
+                  <button type="button" class="quantity-right-plus btn-sm btn-primary btn-number" data-type="plus" data-field="">
+                      <span class="glyphicon glyphicon-plus"><i class="fas fa-search fa-xs"></i></span>
+                  </button>
+              </span>
+            </div> -->
+            <a href="" class="btn mt-3 mb-1 fabtn2 fadeOutUp animated" > Welcome! </a>                      
+            <a href="index cp.html" class="btn btn-success mt-3 mb-1 fabtn fadeInLeft animated" ><i class="fas fa-home"></i> Home</a>
            <!-- popular carousel end -->
            <footer id="sticky-footer" class="mt-3 py-4 bg-light green-bg text-black-50">
               <div class="container text-center">
